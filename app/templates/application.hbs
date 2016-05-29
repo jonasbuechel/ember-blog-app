@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+    <nav>
+        {{#link-to "index"}}HOME{{/link-to}}
+        {{#link-to "blog"}}BLOG{{/link-to}}
+    </nav>
+    <hr />
+</header>
 
-{{outlet}}
+<main>{{outlet}}</main>
+
+<footer>
+    <hr />
+    Footer
+</footer>
