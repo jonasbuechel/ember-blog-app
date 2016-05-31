@@ -9,9 +9,9 @@ export default Ember.Service.extend({
     },
     getSinglePost(id){
         
-        const posts = this.getAllPosts();
-        var   id    = parseInt(id);
+        const posts     = this.getAllPosts();
+        var   postId    = parseInt(id);
         
-        return posts.findBy('id', id);
+        return posts.findBy('id', postId);
     }
 });
