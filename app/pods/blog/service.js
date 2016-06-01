@@ -1,11 +1,14 @@
 import Ember from 'ember';
+import blogObject from 'ember-blog/pods/blog/model';
+
+const blogPosts = [
+    blogObject.create({id: 1, date: 20162905, title: "my first blog entry", text: "this is the first text of a new blog entry"}),
+    blogObject.create({id: 2, date: 20162906, title: "my second blog entry", text: "this is the first text of another blog entry"})
+];
 
 export default Ember.Service.extend({
     getAllPosts(){
-        return [
-            {id: 1, date: 20162905, title: "my first blog entry", text: "this is the first text of a new blog entry"},
-            {id: 2, date: 20162906, title: "my second blog entry", text: "this is the first text of another blog entry"}
-        ];
+        return blogPosts;
     },
     getSinglePost(id){
         
