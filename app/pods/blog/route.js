@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     model(){
         const blog = this.get('blog');
-        return blog.getAllPosts();
+        return this.get('blogService').getAllPosts();
     },
 
-    blog: Ember.inject.service('blog')
+    blogService: Ember.inject.service('blog')
 });
