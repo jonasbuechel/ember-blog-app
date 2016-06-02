@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import blogObject from 'ember-blog/pods/blog/model';
 
 const blogPosts = [
     {id: 1, date: 20162905, title: "my first blog entry", text: "this is the first text of a new blog entry"},
