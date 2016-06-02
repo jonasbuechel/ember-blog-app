@@ -7,7 +7,7 @@ export default Ember.Route.extend({
         },
         runDemo: function(){
             var store = this.store;
-            var newBlogPost = store.createRecord8('post',{
+            var newBlogPost = store.createRecord('post',{
                 title: 'new blog post',
                 date: '20160602',
                 text: 'this is a generated post :)'
