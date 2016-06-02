@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     actions : {
+        simpleTest: function(){
+            console.log('i am a simple test function');
+        },
         runDemo: function(){
             var store = this.store;
             var newBlogPost = store.createRecord8('post',{
