@@ -14,10 +14,11 @@ App = Ember.Application.extend({
   Resolver
 });
 
-App.ApplicationSerializer = DS.LSSerializer.extend();
+//TODO: FIX THIS FOR EMBER 2.x!
+/*App.ApplicationSerializer = DS.LSSerializer.extend();
 App.ApplicationAdapter    = DS.LSAdapter.extend({
     namespace: 'ember-blog'
-});
+});*/
 
 loadInitializers(App, config.modulePrefix);
 
