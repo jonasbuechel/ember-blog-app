@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('work');
     this.route('life');
   });
+  this.route('data-test');
 });
 
 export default Router;
